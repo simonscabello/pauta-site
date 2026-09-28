@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pauta — Escalas para equipes de louvor</title>
+  <meta name="description" content="O Pauta organiza a semana da equipe de louvor: a escala, o ensaio e as músicas com tom, cifra e letra, no celular de cada um. No navegador e no Android.">
+  <meta name="theme-color" content="#FBF8F2">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/icon-180.png">
+  <link rel="preload" href="assets/fonts/PlusJakartaSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Pauta">
+  <meta property="og:title" content="Pauta — Escalas para equipes de louvor">
+  <meta property="og:description" content="Domingo, 9h. Você, no baixo. A escala, o ensaio e as músicas com tom e cifra no celular de cada um.">
+  <meta property="og:image" content="assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!--
+    Página estática, sem build e sem JavaScript. Os endereços do app apontam
+    para pautapp.up.railway.app enquanto o domínio próprio não existe; ao
+    trocar, procure por "pautapp.up.railway.app" neste arquivo e ponha o
+    og:image com endereço absoluto.
+
+    Regra herdada do AGENTS.md: o que esta página promete é o que o código
+    faz. Os avisos reproduzem os textos reais do backend
+    (backend/src/modules/notifications); mudou o texto lá, mude aqui.
+  -->
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#topo" aria-label="Pauta, início">
+        <img src="assets/img/icon-96.png" alt="" width="32" height="32">
+        <span>Pauta</span>
+      </a>
+      <nav class="nav" aria-label="Seções">
+        <a href="#semana">A semana</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#planos">Planos</a>
+        <a href="#perguntas">Perguntas</a>
+      </nav>
+      <div class="topbar-actions">
+        <a class="login" href="https://pautapp.up.railway.app/#/login">Entrar</a>
+        <a class="btn btn-primary btn-sm" href="https://pautapp.up.railway.app/#/cadastro">Criar conta</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="topo">
+      <div class="wrap grid">
+        <div>
+          <span class="kicker">Escalas para equipes de louvor</span>
+          <h1>Domingo, 9h.<br><em>Você, no baixo.</em></h1>
+          <p class="lead">
+            <strong>Ensaio sábado às 19h30, as músicas com tom e cifra, quem mais toca com você.</strong>
+            O Pauta tira a escala do grupo do WhatsApp e põe <span class="hl">no celular de cada integrante</span>.
+          </p>
+          <div class="ctas">
+            <a class="btn btn-primary" href="https://pautapp.up.railway.app/#/cadastro">
+              Criar conta grátis
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a class="btn btn-line" href="https://github.com/simonscabello/pauta-app/releases/latest/download/louve.apk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5M12 15V3"/></svg>
+              Baixar para Android
+            </a>
+          </div>
+          <p class="fine">Grátis para a sua equipe · Sem anúncios · No navegador e no Android</p>
+        </div>
+
+        <div class="stage" aria-hidden="true">
+          <div class="toast t1">
+            <img src="assets/img/icon-96.png" alt="">
+            <div>
+              <div class="meta">Pauta · terça</div>
+              <strong>Sua escala para domingo, 11 de outubro está pronta</strong>
+              <span>Você serve em Baixo · Cultos às 9h e 19h</span>
+            </div>
+          </div>
+
+          <div class="phone">
+            <div class="screen">
+              <div class="notch"></div>
+              <div class="m-status"><span>9:41</span><span>● ● ●</span></div>
+              <div class="m-head">
+                <div class="m-team">LOUVOR ESPERANÇA</div>
+                <div class="m-title">Olá, Eli</div>
+              </div>
+              <div class="m-hero">
+                <div class="m-kicker">Sua próxima escala</div>
+                <div class="m-date">Domingo, 11 de outubro</div>
+                <div class="m-sub">Manhã 9h · Ensaio sábado 19h30</div>
+                <div class="m-role"><b>VOCÊ</b> Baixo</div>
+                <div class="m-songs">
+                  <div class="m-song"><span>314 · Estou Seguro</span><span>G</span></div>
+                  <div class="m-song"><span>Ajuntamento</span><span>D</span></div>
+                  <div class="m-song"><span>Bondade de Deus</span><span>A</span></div>
+                </div>
+                <div class="m-next">E depois: quinta-feira, 15 de outubro</div>
+              </div>
+              <div class="m-grid">
+                <div class="m-tile"><strong>Repertório</strong><small>&nbsp;</small></div>
+                <div class="m-tile"><strong>Músicas novas</strong><small>3 para estudar</small></div>
+                <div class="m-tile"><strong>Sugestões</strong><small>&nbsp;</small></div>
+                <div class="m-tile"><strong>Minha disponib.</strong><small>&nbsp;</small></div>
+              </div>
+              <div class="m-nav"><span class="on">Início</span><span>Agenda</span><span>Equipe</span><span>Perfil</span></div>
+            </div>
+          </div>
+
+          <div class="toast t2">
+            <img src="assets/img/icon-96.png" alt="">
+            <div>
+              <div class="meta">Pauta · sábado</div>
+              <strong>Hoje tem ensaio!</strong>
+              <span>A gente se encontra às 19h30.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block alt" id="grupo">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">O grupo</span>
+          <h2>O grupo do WhatsApp não foi feito <em>para escala</em></h2>
+          <p>A escala se perde entre bom-dia, foto do culto e figurinha. No Pauta, cada informação fica num lugar fixo, e quem está escalado recebe o aviso no celular.</p>
+        </div>
+
+        <div class="versus">
+          <div>
+            <div class="cap"><span>Antes</span><span class="unread">47 não lidas</span></div>
+            <div class="group" aria-label="Exemplo de conversa no grupo da equipe">
+              <div class="head">
+                <span class="avatar">♪</span>
+                <div><b>Louvor 🎶</b><span>Ana, Bia, Caio, Davi, Joana e mais 4</span></div>
+              </div>
+              <div class="msg"><span class="who c1">Caio</span>Gente, quem toca domingo?<span class="t">21:02</span></div>
+              <div class="msg"><span class="who c2">Bia</span>Alguém sabe o tom de Ajuntamento?<span class="t">21:15</span></div>
+              <div class="msg"><span class="who c3">Davi</span>Manda a cifra de novo, por favor 🙏<span class="t">21:16</span></div>
+              <div class="msg faded"><span class="who c4">Joana</span>Não vou poder dia 18, viagem<span class="t">21:30</span></div>
+              <div class="msg"><span class="who c1">Caio</span>Ensaio é que horas mesmo?<span class="t">22:47</span></div>
+              <div class="msg me">Qual domingo? Esse ou o outro? 😅<span class="t">22:48</span></div>
+            </div>
+          </div>
+
+          <div class="arrow" aria-hidden="true">→</div>
+
+          <div>
+            <div class="cap"><span>No Pauta</span></div>
+            <div class="answers">
+              <div class="answer"><span class="q">“Quem toca domingo?”</span><span class="tag">Terça</span><span class="where">Na escala publicada, com a função de cada um — e o aviso chega no celular.</span></div>
+              <div class="answer"><span class="q">“Qual é o tom?”</span><span class="tag">Quinta</span><span class="where">Em cada música, com o tom daquele domingo.</span></div>
+              <div class="answer"><span class="q">“Manda a cifra de novo”</span><span class="tag">Sempre</span><span class="where">Cifra, letra e gravação ficam na música, para quem precisar.</span></div>
+              <div class="answer"><span class="q">“Não vou poder dia 18”</span><span class="tag">Quarta</span><span class="where">Marcado em Minha disponibilidade. Quem lidera é avisado, e não se perde na conversa.</span></div>
+              <div class="answer"><span class="q">“Ensaio é que horas?”</span><span class="tag">Sábado</span><span class="where">Na escala, e no lembrete da manhã do ensaio.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="week" id="semana">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">A semana</span>
+          <h2>Como funciona uma semana <em>com o Pauta</em></h2>
+          <p>Quem lidera monta a escala. Quem toca e canta recebe onde vai servir, o horário do ensaio e as músicas.</p>
+        </div>
+        <div class="staff-band in-week">
+          <nav class="staff" aria-label="Os dias da semana de uma escala">
+            <a class="note" href="#segunda" style="left:9%"><i style="top:80px"></i><b>Seg</b></a>
+            <a class="note" href="#terca" style="left:22.5%"><i style="top:70px"></i><b>Ter</b></a>
+            <a class="note" href="#quarta" style="left:36%"><i style="top:60px"></i><b>Qua</b></a>
+            <a class="note" href="#quinta" style="left:49.5%"><i style="top:50px"></i><b>Qui</b></a>
+            <a class="note" href="#sexta" style="left:63%"><i style="top:40px"></i><b>Sex</b></a>
+            <a class="note" href="#sabado" style="left:76.5%"><i style="top:30px"></i><b>Sáb</b></a>
+            <a class="note sun" href="#domingo" style="left:91%"><i style="top:0"></i><b>Dom</b></a>
+          </nav>
+          <p class="staff-caption">Toque num dia para ver o que acontece nele.</p>
+        </div>
+
+        <div class="days">
+          <article class="day" id="segunda">
+            <div class="when"><span class="d">Segunda</span><span class="who">Quem lidera</span></div>
+            <div class="copy">
+              <h3>O mês inteiro sai da grade de cultos</h3>
+              <p>Os domingos e as quintas que ainda não têm escala viram rascunhos de uma vez. Dá para montar com calma: a equipe <span class="hl">não vê nada pela metade</span>.</p>
+              <p class="aside">O app confere as regras: um instrumento por pessoa, quem cuida do som fora da banda, ministrante escalado.</p>
+            </div>
+            <div class="snip" aria-hidden="true">
+              <div class="label">Datas sem escala</div>
+              <div class="snip-row"><div class="datebox"><small>DOM</small><strong>18</strong></div><div class="t"><strong>Domingo, outubro</strong><span>Manhã 09:00 · Noite 19:00</span></div></div>
+              <div class="snip-row"><div class="datebox"><small>QUI</small><strong>22</strong></div><div class="t"><strong>Quinta, outubro</strong><span>Culto 20:00</span></div></div>
+              <div class="snip-row"><div class="datebox"><small>DOM</small><strong>25</strong></div><div class="t"><strong>Domingo, outubro</strong><span>Manhã 09:00 · Noite 19:00</span></div></div>
+              <span class="snip-btn">Criar os rascunhos destas datas</span>
+            </div>
+          </article>
+
+          <article class="day" id="terca">
+            <div class="when"><span class="d">Terça</span><span class="who">Todo mundo</span></div>
+            <div class="copy">
+              <h3>A escala publicada chega a quem está nela</h3>
+              <p>Com a escala pronta, um toque em <strong>Publicar</strong> e cada escalado recebe no celular onde vai servir, a que horas e quando é o ensaio. Sem ninguém precisar perguntar no grupo.</p>
+            </div>
+            <div aria-hidden="true">
+              <div class="snip small push">
+                <img src="assets/img/icon-96.png" alt="">
+                <div>
+                  <div class="meta">Pauta · agora</div>
+                  <strong>Sua escala para domingo, 11 de outubro está pronta</strong>
+                  <span>Você serve em Baixo · Cultos às 9h e 19h · Ensaio sábado, às 19h30</span>
+                </div>
+              </div>
+              <div class="snip small push">
+                <img src="assets/img/icon-96.png" alt="">
+                <div>
+                  <div class="meta">Pauta · agora</div>
+                  <strong>Sua escala para domingo, 11 de outubro está pronta</strong>
+                  <span>Você ministra e serve em Vocalista · Cultos às 9h e 19h · Ensaio sábado, às 19h30</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="day" id="quarta">
+            <div class="when"><span class="d">Quarta</span><span class="who">Quem lidera</span></div>
+            <div class="copy">
+              <h3>Alguém não pode? Você fica sabendo</h3>
+              <p>Cada integrante marca os dias em que não pode servir. Se já estava escalado, quem lidera recebe o aviso, e a troca abre com a pessoa em destaque.</p>
+              <p class="aside">Ao escolher quem entra, o app mostra há quanto tempo cada um não serve — para a escala não repetir sempre os mesmos.</p>
+            </div>
+            <div aria-hidden="true">
+              <div class="snip small push">
+                <img src="assets/img/icon-96.png" alt="">
+                <div>
+                  <div class="meta">Pauta · 14:12</div>
+                  <strong>Joana avisou que não poderá servir</strong>
+                  <span>domingo, 18 de outubro · Bateria</span>
+                </div>
+              </div>
+              <div class="snip">
+                <div class="label">Bateria · quem pode entrar</div>
+                <div class="snip-row"><div class="t"><strong>Joana Castro</strong><span>Viagem em família</span></div><span class="pill warn">Não pode</span></div>
+                <div class="snip-row"><div class="t"><strong>Rafael Nunes</strong><span>Há 3 semanas · 2 escalas em 8 semanas</span></div><span class="pill brand">Escolher</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="day" id="quinta">
+            <div class="when"><span class="d">Quinta</span><span class="who">Todo mundo</span></div>
+            <div class="copy">
+              <h3>Saem as músicas, com tom e cifra</h3>
+              <p>O repertório chega a quem vai tocar, culto por culto e na ordem do culto. Cada música com o tom <span class="hl">daquele domingo</span>, a cifra, a letra e a gravação. Hino aparece pelo número, do jeito que a equipe pede.</p>
+            </div>
+            <div aria-hidden="true">
+              <div class="snip small push">
+                <img src="assets/img/icon-96.png" alt="">
+                <div>
+                  <div class="meta">Pauta · 20:40</div>
+                  <strong>O repertório de domingo está pronto 🎶</strong>
+                  <span>9 músicas · Separe um tempo para ouvir e ensaiar</span>
+                </div>
+              </div>
+              <div class="snip">
+                <div class="set-h"><strong>Manhã</strong><span class="pill">09:00</span></div>
+                <div class="moment">Dízimos e Ofertas</div>
+                <div class="song"><div class="n"><strong>Estou Seguro</strong><span>314 CC</span></div><span class="key">G</span></div>
+                <div class="moment">Momento de Louvor</div>
+                <div class="song"><div class="n"><strong>Ajuntamento</strong><span>Vencedores Por Cristo</span></div><span class="key">D</span></div>
+                <div class="song"><div class="n"><strong>Bondade de Deus</strong> <span class="pill brand">Nova</span></div><span class="key">A</span></div>
+                <div class="chips"><span class="chip">Cifra</span><span class="chip">Letra</span><span class="chip">YouTube</span><span class="chip">Spotify</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="day" id="sexta">
+            <div class="when"><span class="d">Sexta</span><span class="who">Quem toca</span></div>
+            <div class="copy">
+              <h3>A equipe também sugere</h3>
+              <p>Qualquer integrante sugere uma música — para o repertório ou para um domingo — dizendo por quê. Quem monta a escala vê as sugestões daquela data na hora de escolher.</p>
+            </div>
+            <div class="snip" aria-hidden="true">
+              <div class="label">Sugestão · para domingo, 25 de outubro</div>
+              <strong style="font-size:1rem">Lugar Secreto</strong> <span class="by">· Gabriela Rocha</span>
+              <p class="quote">“A gente cantou no retiro e a igreja inteira acompanhou. Seria bonito no domingo da ceia.”</p>
+              <p class="by">Sugerida por Bia · +2 pessoas</p>
+              <span class="snip-btn soft">Ver sugestão</span>
+            </div>
+          </article>
+
+          <article class="day" id="sabado">
+            <div class="when"><span class="d">Sábado</span><span class="who">Quem toca</span></div>
+            <div class="copy">
+              <h3>Hoje tem ensaio</h3>
+              <p>De manhã, o lembrete do ensaio da noite. Quando não há ensaio, o lembrete vem na véspera do culto. Ninguém descobre no domingo que estava escalado.</p>
+              <p class="aside">Tem músico convidado, que não usa o app? Um toque gera a mensagem para o WhatsApp, no formato que a equipe já mandava à mão.</p>
+            </div>
+            <div aria-hidden="true">
+              <div class="snip small push">
+                <img src="assets/img/icon-96.png" alt="">
+                <div>
+                  <div class="meta">Pauta · 9:00</div>
+                  <strong>Hoje tem ensaio!</strong>
+                  <span>A gente se encontra às 19h30. Revise o repertório e venha preparado para tocar com a equipe. 🎶</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="day sun" id="domingo">
+            <div class="when"><span class="d">Domingo</span><span class="who">Todo mundo</span></div>
+            <div class="copy">
+              <h3>Na hora, a letra na tela</h3>
+              <p>Letra maior ou menor, a tela sempre acesa e a próxima música a um toque. O culto acaba, e a escala entra para o histórico da equipe — é dele que saem os relatórios de quem serviu e do que foi cantado.</p>
+            </div>
+            <div class="snip lyrics" aria-hidden="true">
+              <div class="top"><span><b>Cada Momento</b> · 354 CC</span><span class="ctrl"><span>A−</span><span>A+</span></span></div>
+              <!--
+                Domínio público: letra de Daniel Webster Whittle (1840–1901),
+                tradução de Salomão Luiz Ginsburg (1867–1927), 1909. É o texto
+                do Cantor Cristão, e não o do HCC 183, que pode ter sido revisto.
+                Letra de outra música não entra aqui sem a mesma conferência.
+              -->
+              <p class="verse">Sendo remido por Cristo na cruz,<br>Vivo gozando no reino da luz;<br>Cheio da graça que vem de Jesus,<br>Cada momento o Senhor me conduz.</p>
+              <div class="next"><span>Próxima</span><b>Ajuntamento · D</b></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block alt" id="recursos">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">E mais</span>
+          <h2>O que mais cabe <em>no Pauta</em></h2>
+          <p>O que a semana não mostrou e a equipe usa o ano inteiro.</p>
+        </div>
+
+        <div class="bento">
+          <article class="tile w2">
+            <div>
+              <h3>Repertório da equipe</h3>
+              <p>Procure pelo nome, e a cifra, a letra e o vídeo vêm junto quando existem. Tom da equipe, temas e hinos do Cantor Cristão, do HCC e da Harpa Cristã.</p>
+            </div>
+            <div class="demo snip" aria-hidden="true">
+              <div class="song"><div class="n"><strong>Ajuntamento</strong><span class="hist"><span class="recent">Cantada há 12 dias</span> · 3 vezes em 6 meses</span></div><span class="key">D</span></div>
+              <div class="song"><div class="n"><strong>Estou Seguro</strong><span class="hist">314 CC · Salvação</span></div><span class="key">G</span></div>
+              <div class="books"><span class="book">Cantor Cristão</span><span class="book">HCC</span><span class="book">Harpa Cristã</span></div>
+            </div>
+          </article>
+
+          <article class="tile w2">
+            <div>
+              <h3>Quem serviu, quem ficou de fora</h3>
+              <p>Participação por pessoa e por função, quem não pôde e quem ficou livre. E o repertório cantado demais ou esquecido.</p>
+            </div>
+            <div class="demo snip" aria-hidden="true">
+              <div class="label">Escalas em 3 meses</div>
+              <div class="bars">
+                <div class="bar"><span>Ana</span><i style="width:100%"></i><b>11</b></div>
+                <div class="bar"><span>Eli</span><i style="width:73%"></i><b>8</b></div>
+                <div class="bar"><span>Rafael</span><i class="low" style="width:18%"></i><b>2</b></div>
+              </div>
+              <div class="flags"><span class="pill draft">2 cantadas demais</span><span class="pill">14 paradas</span></div>
+            </div>
+          </article>
+
+          <article class="tile w2">
+            <div>
+              <h3>Serve em duas equipes?</h3>
+              <p>Uma conta só, com a troca no topo da tela inicial. Escalas, músicas e disponibilidade ficam separadas por equipe.</p>
+            </div>
+            <div class="demo teams hide-sm" aria-hidden="true">
+              <div class="teamrow on"><b>Louvor Esperança</b><span>Líder</span></div>
+              <div class="teamrow"><b>Louvor Jovem</b><span>Membro</span></div>
+            </div>
+          </article>
+
+          <article class="tile w4 dark">
+            <div class="ai-grid">
+              <div>
+                <span class="kicker">Assistentes de IA</span>
+                <h3 style="margin-top:10px">Mande a imagem da escala do mês. A IA cadastra.</h3>
+                <p>Conecte um assistente como o Claude Code ao Pauta. Ele confere cada nome e função, pergunta o que não tiver certeza e cria as escalas em rascunho. Publicar continua sendo com você, no app.</p>
+              </div>
+              <div class="chat" aria-hidden="true">
+                <div class="bubble me"><span class="file">🖼 escala-outubro.png</span>Cadastra a escala de outubro.</div>
+                <div class="bubble ai">“Pr. João” é o João Pedro, da Direção do culto?</div>
+                <div class="bubble me">Isso.</div>
+                <div class="bubble ai">Pronto: 9 escalas em rascunho.</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tile w2">
+            <div>
+              <h3>Reuniões na mesma agenda</h3>
+              <p>Reunião, ensaio geral, confraternização. A equipe inteira é avisada quando um evento é marcado.</p>
+            </div>
+            <div class="demo snip small push hide-sm" aria-hidden="true">
+              <img src="assets/img/icon-96.png" alt="">
+              <div>
+                <strong>Novo na agenda: Reunião de planejamento</strong>
+                <span>Vai ser na terça-feira, 13 de outubro, às 20h · Sala 2</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tile w3">
+            <div>
+              <h3>No computador e no iPhone</h3>
+              <p>O mesmo Pauta no navegador, com calendário e barra lateral.</p>
+            </div>
+            <div class="demo browser hide-sm" aria-hidden="true">
+              <div class="bar-top"><i></i><i></i><i></i><span>Pauta · Agenda</span></div>
+              <img src="assets/img/app-agenda.png" alt="" width="1280" height="800" loading="lazy">
+            </div>
+          </article>
+
+          <article class="tile w3">
+            <div>
+              <h3>Quem não tem o app recebe no WhatsApp</h3>
+              <p>O convidado entra na escala sem criar conta, e um toque gera a mensagem para o grupo.</p>
+            </div>
+            <div class="demo wa-wrap" aria-hidden="true">
+              <div class="wa-msg"><b>Domingo 11/10</b>
+
+<b>Vocal:</b> Ana (ministrante), Bia, Caio
+<b>Instrumentos:</b> Davi (violão), Eli (baixo), Joana (bateria)
+
+<b>Manhã</b>
+<b>Dízimos e Ofertas:</b> 314 CC - Estou Seguro<span class="time">19:42</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="origem">
+      <div class="wrap origin">
+        <div class="intro">
+          <span class="kicker">De onde veio</span>
+          <h2>Feito por uma <em>equipe de louvor</em></h2>
+          <p>O Pauta não começou como sistema de gestão. Começou com uma equipe que montava a escala numa tabela e mandava no grupo — e cada regra do app veio de um domingo de verdade.</p>
+        </div>
+        <ol class="rules">
+          <li><span class="q">“Na quinta, as músicas saem na hora.”</span><span>Então a escala pode ter o repertório definido na hora, e ninguém cobra uma lista que não vai existir.</span></li>
+          <li><span class="q">“Quem está no baixo não toca guitarra no mesmo culto.”</span><span>O app confere um instrumento por pessoa — e deixa cantar e tocar violão ao mesmo tempo.</span></li>
+          <li><span class="q">“Hino se pede pelo número.”</span><span>“314 CC”, na escala e na mensagem do WhatsApp.</span></li>
+          <li><span class="q">“O motivo de faltar não é assunto do grupo.”</span><span>O dia em que você não pode, a equipe vê. O motivo, só quem lidera.</span></li>
+          <li><span class="q">“Escala pela metade confunde todo mundo.”</span><span>Ela fica em rascunho até estar pronta. Publicada, avisa quem está nela.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="block alt" id="planos">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">Planos</span>
+          <h2>Comece de graça, <em>com tudo liberado</em></h2>
+          <p>A sua equipe usa todas as funcionalidades, sem cartão de crédito.</p>
+        </div>
+        <div class="plans">
+          <article class="plan featured">
+            <span class="ribbon">Disponível</span>
+            <h3>Equipe</h3>
+            <p class="for">Para a equipe de louvor da sua igreja.</p>
+            <div class="price"><strong>R$ 0</strong><span>para sempre</span></div>
+            <ul class="ticks">
+              <li>Escalas, cultos e ensaios</li>
+              <li>Repertório com cifra, letra e hinários</li>
+              <li>Disponibilidade, sugestões e relatórios</li>
+              <li>Avisos no Android e texto para o WhatsApp</li>
+              <li>Assistentes de IA</li>
+            </ul>
+            <a class="btn btn-primary" href="https://pautapp.up.railway.app/#/cadastro">Criar conta grátis</a>
+          </article>
+          <article class="plan">
+            <h3>Igreja</h3>
+            <p class="for">Para igrejas com várias equipes e ministérios.</p>
+            <div class="price"><strong class="ask">Sob consulta</strong></div>
+            <ul class="ticks">
+              <li>Tudo do plano Equipe</li>
+              <li><mark class="todo">[DIFERENCIAIS DO PLANO]</mark></li>
+            </ul>
+            <a class="btn btn-line" href="#contato">Fale com a gente</a>
+          </article>
+        </div>
+        <p class="plans-note">Sem anúncios e sem venda de dados, em qualquer plano.</p>
+      </div>
+    </section>
+
+    <section class="block" id="perguntas">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">Perguntas</span>
+          <h2>Antes de <em>começar</em></h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Preciso instalar alguma coisa?</summary>
+            <p>Não. O Pauta funciona no navegador do celular ou do computador. No Android, também dá para instalar o aplicativo, que é o que recebe os avisos de escala e os lembretes.</p>
+          </details>
+          <details>
+            <summary>Funciona no iPhone?</summary>
+            <p>Sim, pelo navegador (Safari ou outro). Ainda não há aplicativo na App Store, e por isso o iPhone não recebe os avisos no celular.</p>
+          </details>
+          <details>
+            <summary>Como a equipe entra?</summary>
+            <p>Quem lidera cria a equipe e cadastra os integrantes. Depois, manda a cada um um convite com código; a pessoa cria a conta e já cai na equipe, com as funções que exerce.</p>
+          </details>
+          <details>
+            <summary>E o músico que vem só para um domingo?</summary>
+            <p>Ele entra como convidado: aparece na escala e na mensagem do WhatsApp, sem precisar criar conta.</p>
+          </details>
+          <details>
+            <summary>Quem vê os meus dados?</summary>
+            <p>Só a sua equipe. Outras equipes não veem nada. O motivo de você não poder num domingo fica só com quem lidera, e o Pauta não mostra anúncios nem vende dados.</p>
+            <p>Os detalhes estão na <a href="https://pautapp.up.railway.app/privacidade.html">política de privacidade</a>.</p>
+          </details>
+          <details>
+            <summary>Posso participar de mais de uma equipe?</summary>
+            <p>Sim. A mesma conta participa de quantas equipes precisar, e a troca é feita no topo da tela inicial.</p>
+          </details>
+          <details>
+            <summary>Como excluo a minha conta?</summary>
+            <p>Pelo próprio app, em Perfil › Meus dados › Excluir minha conta. O passo a passo também está <a href="https://pautapp.up.railway.app/excluir-conta.html">nesta página</a>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="end alt">
+      <div class="wrap">
+        <h2>Monte a primeira escala <em>da sua equipe</em></h2>
+        <p>Crie a equipe, cadastre quem toca e monte a primeira escala em poucos minutos.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="https://pautapp.up.railway.app/#/cadastro">Criar conta grátis</a>
+          <a class="btn btn-line" href="https://github.com/simonscabello/pauta-app/releases/latest/download/louve.apk">Baixar para Android</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <div class="wrap">
+      <div class="cols">
+        <div class="about">
+          <a class="brand" href="#topo"><img src="assets/img/icon-96.png" alt="" width="32" height="32"><span>Pauta</span></a>
+          <p>Escalas para equipes de louvor.</p>
+          <p>Contato: <mark class="todo">[E-MAIL DE CONTATO]</mark></p>
+        </div>
+        <div>
+          <h4>Produto</h4>
+          <ul>
+            <li><a href="#semana">A semana</a></li>
+            <li><a href="#planos">Planos</a></li>
+            <li><a href="https://pautapp.up.railway.app/#/login">Entrar</a></li>
+            <li><a href="https://github.com/simonscabello/pauta-app/releases/latest/download/louve.apk">Baixar para Android</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="https://pautapp.up.railway.app/privacidade.html">Privacidade</a></li>
+            <li><a href="https://pautapp.up.railway.app/termos.html">Termos de uso</a></li>
+            <li><a href="https://pautapp.up.railway.app/excluir-conta.html">Excluir conta</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">
+        <span>© 2026 Pauta · <mark class="todo">[RAZÃO SOCIAL] · [CNPJ]</mark></span>
+        <span class="fim" aria-hidden="true" title="Fim"><i></i><i></i></span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

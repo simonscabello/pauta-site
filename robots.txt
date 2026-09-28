@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Trocar pelo domínio definitivo.
+Sitemap: https://DOMINIO/sitemap.xml

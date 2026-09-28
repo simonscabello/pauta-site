@@ -1,0 +1,41 @@
+{
+	admin off
+	persist_config off
+	auto_https off
+	log {
+		format json
+	}
+	servers {
+		trusted_proxies static private_ranges 100.0.0.0/8
+	}
+}
+
+:{$PORT:8080} {
+	root * /usr/share/caddy
+	encode zstd gzip
+
+	# www.<dominio> -> <dominio>, para o endereço divulgado ser um só.
+	@www header_regexp www Host ^www\.(.+)$
+	redir @www https://{re.www.1}{uri} permanent
+
+	try_files {path} {path}.html {path}/index.html
+	file_server
+
+	# A página muda a cada deploy; os arquivos de /assets mudam de nome
+	# quando mudam (ou quase nunca), então podem ficar em cache.
+	header /assets/* Cache-Control "public, max-age=604800"
+	@html path / *.html
+	header @html Cache-Control "no-cache"
+
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+		-Server
+	}
+
+	handle_errors {
+		root * /usr/share/caddy
+		rewrite * /404.html
+		file_server
+	}
+}
