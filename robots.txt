@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Trocar pelo domínio definitivo.
-Sitemap: https://DOMINIO/sitemap.xml
+Sitemap: https://pauta-louvor.up.railway.app/sitemap.xml
