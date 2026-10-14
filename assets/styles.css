@@ -494,6 +494,10 @@ section.block.alt { background: var(--paper-2); }
 .plan { background: var(--card); border: 1px solid var(--line); border-radius: 28px; padding: 34px; display: flex; flex-direction: column; box-shadow: var(--shadow); position: relative; }
 @media (max-width: 480px) { .plan { padding: 26px 20px; } }
 .plan.featured { border: 2px solid #4F46E5; }
+/* `.plan` tem display próprio, que venceria o [hidden] do navegador. Com um
+   plano só, ele fica no centro em vez de ocupar meia grade. */
+.plan[hidden] { display: none; }
+.plans:has(> .plan[hidden]) { grid-template-columns: minmax(0, 460px); justify-content: center; }
 .plan .ribbon { position: absolute; top: -13px; left: 30px; background: #4F46E5; color: #fff; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 4px 12px; border-radius: 999px; }
 .plan h3 { font-family: var(--serif); font-weight: 400; font-size: 1.9rem; }
 .plan .for { color: var(--ink-soft); margin-top: 4px; }
