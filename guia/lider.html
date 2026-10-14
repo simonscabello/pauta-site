@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guia do líder — Pauta</title>
+  <meta name="description" content="Passo a passo para quem lidera a equipe de louvor no Pauta: cultos, integrantes, convites, repertório, montar e publicar a escala.">
+  <meta name="theme-color" content="#FBF8F2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icon-32.png">
+  <link rel="apple-touch-icon" href="/assets/img/icon-180.png">
+  <link rel="preload" href="/assets/fonts/PlusJakartaSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/assets/styles.css">
+
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Pauta">
+  <meta property="og:title" content="Guia do líder — Pauta">
+  <meta property="og:description" content="Da equipe nova à escala publicada, tela por tela.">
+  <meta property="og:url" content="https://pauta-louvor.up.railway.app/guia/lider.html">
+  <meta property="og:image" content="https://pauta-louvor.up.railway.app/assets/img/og.png">
+  <link rel="canonical" href="https://pauta-louvor.up.railway.app/guia/lider.html">
+  <!--
+    Este guia descreve o app de hoje, com capturas reais da equipe fictícia
+    "Louvor Esperança" do banco local (nunca de uma equipe de verdade).
+    Mudou um fluxo, uma tela ou um texto citado aqui: mude o guia e a
+    captura na mesma entrega. O mapa do que cada tela afeta está em
+    docs/produto/onboarding.md, "Mapa do conteúdo".
+  -->
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Pauta, início">
+        <img src="/assets/img/icon-96.png" alt="" width="32" height="32">
+        <span>Pauta</span>
+      </a>
+      <nav class="nav" aria-label="Guias">
+        <a href="/guia/lider.html" aria-current="page">Guia do líder</a>
+        <a href="/guia/integrante.html">Guia do integrante</a>
+      </nav>
+      <div class="topbar-actions">
+        <a class="login" href="https://pautapp.up.railway.app/#/login">Entrar</a>
+        <a class="btn btn-primary btn-sm" href="https://pautapp.up.railway.app/#/cadastro">Criar conta</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="guia-topo">
+      <div class="wrap">
+        <span class="eyebrow">Guia do líder</span>
+        <h1>Da equipe nova à escala publicada</h1>
+        <p class="lead">O passo a passo de quem monta a equipe e as escalas no Pauta, na ordem em que as coisas são feitas. As telas são do app de verdade, com uma equipe de exemplo.</p>
+        <p class="lead">Ao entrar pela primeira vez, o app mostra um tour curto com onde fica cada coisa. Ele pode ser visto de novo em <b>Perfil › Ajuda</b>.</p>
+      </div>
+    </section>
+
+    <div class="wrap guia">
+      <nav class="indice" aria-label="Neste guia">
+        <details open>
+          <summary>Neste guia</summary>
+          <h2>Neste guia</h2>
+          <ol>
+            <li><a href="#criar">Criar a equipe</a></li>
+            <li><a href="#painel">O painel da equipe</a></li>
+            <li><a href="#cultos">Cultos da igreja</a></li>
+            <li><a href="#funcoes">Funções</a></li>
+            <li><a href="#integrantes">Integrantes</a></li>
+            <li><a href="#convites">Convites</a></li>
+            <li><a href="#momentos">Momentos do culto</a></li>
+            <li><a href="#repertorio">Repertório</a></li>
+            <li><a href="#escala">Montar a escala</a></li>
+            <li><a href="#publicar">Rascunho e publicação</a></li>
+            <li><a href="#compartilhar">Compartilhar e calendário</a></li>
+            <li><a href="#planejar">Duplicar e planejar o mês</a></li>
+            <li><a href="#quem-nao-pode">Quem não pode</a></li>
+            <li><a href="#sugestoes">Sugestões da equipe</a></li>
+            <li><a href="#relatorios">Relatórios</a></li>
+            <li><a href="#avisos">Avisos</a></li>
+            <li><a href="#liberacao">Recursos que dependem de liberação</a></li>
+          </ol>
+        </details>
+      </nav>
+
+      <div>
+        <section class="passo" id="criar">
+          <div>
+            <h2><span class="n">1</span>Criar a equipe</h2>
+            <p class="onde">Ao criar a conta, ou em <b>Perfil</b>, na troca de equipe.</p>
+            <ol>
+              <li>Crie a conta no app ou no navegador, com nome, e-mail e senha.</li>
+              <li>Escolha <kbd>Criar equipe</kbd> e dê o nome que aparece para os integrantes (por exemplo, "Ministério de Louvor").</li>
+              <li>Você vira o <b>dono</b> da equipe. Ela já nasce com funções (Vocalista, Violão, Guitarra, Baixo, Teclado, Bateria, Multimídia, Som e Direção do culto) e com uma grade de cultos de exemplo, que você ajusta no passo 3.</li>
+            </ol>
+            <div class="dica"><b>Quem lidera junto</b>Você pode tornar outra pessoa <b>líder</b> na ficha dela (passo 5). Líder faz tudo o que o dono faz; só o dono passa a posse da equipe.</div>
+          </div>
+          <div class="telas">
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-criar-equipe-202610.webp" alt="Tela Criar equipe, com o campo Nome da equipe" width="390" height="844" loading="lazy"></div><figcaption>Criar equipe</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="passo" id="painel">
+          <div>
+            <h2><span class="n">2</span>O painel da equipe</h2>
+            <p class="onde">Aba <b>Equipe</b>.</p>
+            <p>Tudo o que é da equipe fica aqui, separado por assunto:</p>
+            <ul>
+              <li><b>Músicas</b>: o repertório, as sugestões da equipe e os relatórios do repertório.</li>
+              <li><b>Pessoas</b>: integrantes, aniversários, funções e convites.</li>
+              <li><b>Escalas</b>: cultos da igreja, momentos do culto, quem não pode e participação.</li>
+              <li><b>Configurações</b>: dados da equipe e, quando liberado, o grupo do WhatsApp.</li>
+            </ul>
+            <p>Quem é integrante vê só as músicas e as pessoas.</p>
+          </div>
+          <div class="telas">
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-painel-202610.webp" alt="Aba Equipe com os grupos Músicas e Pessoas" width="390" height="844" loading="lazy"></div><figcaption>Aba Equipe</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="passo" id="cultos">
+          <div>
+            <h2><span class="n">3</span>Cultos da igreja</h2>
+            <p class="onde"><b>Equipe › Escalas › Cultos da igreja</b>.</p>
+            <p>Cadastre os horários que se repetem toda semana: o dia, a hora e o nome (Manhã, Noite, Culto de oração). Ao criar uma escala, os cultos daquele dia já vêm marcados.</p>
+            <ol>
+              <li>Toque em <kbd>Adicionar</kbd> para cada culto. Para mudar ou remover, toque no culto.</li>
+              <li>Em <b>Como vocês escalam</b>, escolha:
+                <ul>
+                  <li><b>Uma por dia</b>: os cultos do mesmo dia ficam numa escala só, com a mesma equipe (manhã e noite do domingo, por exemplo).</li>
+                  <li><b>Uma por culto</b>: cada culto tem a sua escala, com equipe, músicas, ensaio e quem ministra próprios. É o caso da igreja com três ou quatro cultos no domingo.</li>
+                </ul>
+              </li>
+            </ol>
+            <div class="dica"><b>Mudar a grade depois</b>Se você mudar o horário de um culto, o app pergunta se quer atualizar as escalas futuras que já usam aquele culto.</div>
+          </div>
+          <div class="telas">
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-cultos-202610.webp" alt="Cultos da igreja, com Como vocês escalam no topo e os cultos de domingo e quinta" width="390" height="844" loading="lazy"></div><figcaption>Cultos da igreja</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="passo" id="funcoes">
+          <div>
+            <h2><span class="n">4</span>Funções</h2>
+            <p class="onde"><b>Equipe › Pessoas › Funções</b>.</p>
+            <p>As funções que aparecem ao escalar e ao cadastrar um integrante. Acrescente as que a equipe usa (Sax, Backing vocal) com <kbd>Nova função</kbd>.</p>
+            <p>A categoria de cada função decide o que pode acumular na mesma escala:</p>
+            <ul>
+              <li><b>Vocal</b> acumula com um instrumento.</li>
+              <li><b>Instrumento</b>: um por pessoa por escala.</li>
+              <li><b>Multimídia e som</b> não acumulam com a banda.</li>
+            </ul>
+            <p>Função que a equipe não usa mais é desativada, e não apagada: as escalas antigas continuam com ela.</p>
+          </div>
+          <div class="telas">
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-funcoes-202610.webp" alt="Funções agrupadas por Vocal, Instrumento e Multimídia e som" width="390" height="844" loading="lazy"></div><figcaption>Funções</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="passo" id="integrantes">
+          <div>
+            <h2><span class="n">5</span>Integrantes</h2>
+            <p class="onde"><b>Equipe › Pessoas › Integrantes</b>.</p>
+            <ol>
+              <li>Toque em <kbd>Adicionar</kbd>, informe o nome e marque as funções que a pessoa exerce. Telefone e observações são opcionais.</li>
+              <li>A pessoa <b>não precisa ter o app</b> para entrar na escala. Quando ela criar a conta pelo convite (passo 6), o cadastro passa a ser dela.</li>
+              <li>Para editar, toque no <b>⋮</b> da linha: lá também ficam convidar, redefinir a senha e remover da equipe.</li>
+            </ol>
+            <p>Na ficha da pessoa você muda o papel (integrante ou líder) e marca um afastamento, quando ela vai ficar um tempo fora.</p>
+          </div>
+          <div class="telas">
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-integrantes-202610.webp" alt="Lista de integrantes" width="390" height="844" loading="lazy"></div><figcaption>Integrantes</figcaption></figure>
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-integrante-novo-202610.webp" alt="Formulário Adicionar integrante, com nome e funções" width="390" height="844" loading="lazy"></div><figcaption>Adicionar integrante</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="passo" id="convites">
+          <div>
+            <h2><span class="n">6</span>Convites</h2>
+            <p class="onde"><b>Equipe › Pessoas › Convites</b>.</p>
+            <ul>
+              <li><b>Convite geral</b>: um código para todos. Copie e mande no grupo da equipe. Quem entra com ele vira integrante.</li>
+              <li><b>Convite individual</b>: em <kbd>Convidar</kbd>, ao lado de quem já está cadastrado. A pessoa assume o cadastro que você criou, com as funções preenchidas.</li>
+            </ul>
+            <p>Quem recebe o código cria a conta, toca em <b>Recebi um convite</b> e cola o código.</p>
+          </div>
+          <div class="telas">
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-convites-202610.webp" alt="Convites, com o código do convite geral e os convites individuais" width="390" height="844" loading="lazy"></div><figcaption>Convites</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="passo" id="momentos">
+          <div>
+            <h2><span class="n">7</span>Momentos do culto</h2>
+            <p class="onde"><b>Equipe › Escalas › Momentos do culto</b>.</p>
+            <p>Os momentos em que cada música entra: Prelúdio, Abertura, Dízimos e Ofertas, Momento de Louvor, Música Especial e Pós-lúdio. A lista é da sua equipe:</p>
+            <ul>
+              <li>Toque num momento para renomear ou excluir.</li>
+              <li>Arraste pela alça para deixar na ordem do culto.</li>
+              <li><kbd>Novo momento</kbd> cadastra o que a sua igreja tem (Santa Ceia, Apelo, Batismo).</li>
+            </ul>
+            <p>Também dá para cadastrar um momento novo na hora de montar as músicas (passo 9). Para o que acontece uma vez só, há "Outro", com o nome escrito à mão.</p>
+          </div>
+          <div class="telas">
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-momentos-202610.webp" alt="Momentos do culto, com Santa Ceia no fim da lista" width="390" height="844" loading="lazy"></div><figcaption>Momentos do culto</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="passo" id="repertorio">
+          <div>
+            <h2><span class="n">8</span>Repertório</h2>
+            <p class="onde"><b>Equipe › Músicas › Repertório</b>.</p>
+            <ol>
+              <li>Toque em <kbd>Adicionar</kbd> e digite o nome e, se souber, o artista. O Pauta procura nas músicas que outras equipes já cadastraram e no Spotify, e preenche o que encontrar.</li>
+              <li>Confira o tom da equipe, os links de cifra, letra e YouTube, o número no hinário e os temas.</li>
+              <li>Marque <b>Entra como música nova</b> quando a equipe ainda está aprendendo: ela aparece com o selo "Nova" na escala.</li>
+            </ol>
+            <p>As abas separam <b>Cânticos</b>, <b>Hinos</b> e <b>Novas</b>. Música que saiu do repertório é arquivada, e não apagada.</p>
+          </div>
+          <div class="telas">
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-repertorio-202610.webp" alt="Repertório da equipe, com as abas Cânticos, Hinos e Novas" width="390" height="844" loading="lazy"></div><figcaption>Repertório</figcaption></figure>
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-musica-nova-202610.webp" alt="Adicionar música, com a busca por nome e artista" width="390" height="844" loading="lazy"></div><figcaption>Adicionar música</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="passo" id="escala">
+          <div>
+            <h2><span class="n">9</span>Montar a escala</h2>
+            <p class="onde">Aba <b>Agenda</b>, botão <kbd>Nova</kbd> › <b>Nova escala</b>.</p>
+            <ol>
+              <li><b>O dia e os cultos.</b> O dia já vem com a próxima data da grade, e os cultos daquele dia vêm marcados. Na equipe que escala por culto, vem só o próximo culto sem escala.</li>
+              <li><b>O ensaio:</b> sem ensaio, no dia, na véspera ou em outro dia.</li>
+              <li><b>As músicas:</b> <b>Planejado</b> (escolhidas antes) ou <b>Na hora</b> (definidas no culto; o app não cobra repertório).</li>
+              <li>A paleta de roupas é opcional. Título, local e observações ficam em <b>Informações adicionais</b>, para o culto especial.</li>
+              <li>Toque em <kbd>Criar escala</kbd>. O app leva direto para <b>Escalar equipe</b>: em cada função, toque em <b>+</b> e escolha quem serve. A lista mostra quem avisou que não pode e há quanto tempo cada um não serve. Escolha também quem <b>ministra</b>.</li>
+              <li>Em <kbd>Salvar e escolher músicas</kbd>, monte as músicas de cada culto. Toque numa música para escolher o momento, o tom desta escala e um recado. <b>Copiar de Manhã</b> repete as músicas em outro culto.</li>
+            </ol>
+            <div class="dica"><b>Mesma equipe em outro culto</b>Na equipe que escala por culto, a tela de escalar mostra <b>Copiar de</b> quando outra escala do mesmo dia já tem equipe: copia as funções e quem ministra, para você ajustar e salvar.</div>
+          </div>
+          <div class="telas">
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-agenda-202610.webp" alt="Agenda com o calendário do mês e o botão Nova" width="390" height="844" loading="lazy"></div><figcaption>Agenda</figcaption></figure>
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-escala-nova-202610.webp" alt="Nova escala, com dia, cultos, ensaio e músicas" width="390" height="844" loading="lazy"></div><figcaption>Nova escala</figcaption></figure>
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-escalar-202610.webp" alt="Escalar equipe, com ministrante e as funções preenchidas" width="390" height="844" loading="lazy"></div><figcaption>Escalar equipe</figcaption></figure>
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-musicas-escala-202610.webp" alt="Músicas da escala, por culto, com momento e tom" width="390" height="844" loading="lazy"></div><figcaption>Músicas da escala</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="passo" id="publicar">
+          <div>
+            <h2><span class="n">10</span>Rascunho e publicação</h2>
+            <p class="onde">Na escala, a barra de baixo.</p>
+            <p>Toda escala nasce como <b>rascunho</b>: só a liderança vê, e você pode montar com calma. Quando estiver pronta, toque em <kbd>Publicar</kbd>. A equipe passa a ver a escala e quem está nela recebe o aviso no celular.</p>
+            <p>Dá para publicar antes de escolher as músicas: quando o repertório sair, a equipe é avisada de novo.</p>
+            <p>Para ajustar uma escala publicada, edite normalmente: quem entrou, saiu ou teve horário mudado recebe o aviso. Pelo menu <b>⋮</b> da escala ficam <b>Editar dia e horários</b>, <b>Voltar a rascunho</b> e <b>Excluir escala</b>.</p>
+          </div>
+          <div class="telas">
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-rascunho-202610.webp" alt="Escala em rascunho, com o botão Publicar na barra de baixo" width="390" height="844" loading="lazy"></div><figcaption>Escala em rascunho</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="passo" id="compartilhar">
+          <div>
+            <h2><span class="n">11</span>Compartilhar e calendário</h2>
+            <p class="onde">No topo da escala.</p>
+            <ul>
+              <li><b>Compartilhar escala</b> monta o texto para o WhatsApp: a data, quem serve em cada função, quem ministra e as músicas de cada culto, com o momento e o número do hino.</li>
+              <li><b>Adicionar ao calendário</b> põe os cultos e o ensaio no Google Agenda ou na agenda do celular.</li>
+              <li>Na escala, <b>Ouvir as músicas no YouTube</b> abre todas em sequência, na ordem do culto.</li>
+            </ul>
+          </div>
+          <div class="telas">
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-escala-publicada-202610.webp" alt="Escala publicada, com cultos, ensaio, músicas e os botões do topo" width="390" height="844" loading="lazy"></div><figcaption>Escala publicada</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="passo so-texto" id="planejar">
+          <div>
+            <h2><span class="n">12</span>Duplicar e planejar o mês</h2>
+            <ul>
+              <li><b>Duplicar escala</b> (menu <b>⋮</b> da escala): copia equipe, quem ministra, recados e músicas para outra data, como rascunho.</li>
+              <li><b>Planejar próximas escalas</b> (em Cultos da igreja): cria de uma vez os rascunhos das próximas 4, 8 ou 12 semanas pela grade, pulando o que já tem escala.</li>
+              <li>Na <b>Agenda</b>, a linha "datas sem escala" mostra o que a grade prevê e ainda não foi montado. Tocar numa data cria a escala daquele dia.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="passo" id="quem-nao-pode">
+          <div>
+            <h2><span class="n">13</span>Quem não pode</h2>
+            <p class="onde"><b>Equipe › Escalas › Quem não pode</b>.</p>
+            <p>Cada integrante marca os dias em que não pode servir em <b>Minha disponibilidade</b>. Aqui você vê o mês: quantos não podem em cada dia e, ao tocar no dia, quem são. A aba <b>Por pessoa</b> mostra quem mais avisou e quem ficou livre sem ser chamado.</p>
+            <p>Ao escalar, quem não pode aparece marcado. Se alguém avisa depois de escalado, a liderança recebe o aviso e a Início mostra "Fulano não pode", com o atalho para substituir.</p>
+          </div>
+          <div class="telas">
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-quem-nao-pode-202610.webp" alt="Quem não pode, com o calendário do mês" width="390" height="844" loading="lazy"></div><figcaption>Quem não pode</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="passo" id="sugestoes">
+          <div>
+            <h2><span class="n">14</span>Sugestões da equipe</h2>
+            <p class="onde"><b>Equipe › Músicas › Sugestões</b>.</p>
+            <p>Qualquer integrante sugere uma música, para o repertório ou para um domingo, com o motivo e os links. Ao abrir a sugestão:</p>
+            <ul>
+              <li><kbd>Aceitar sugestão</kbd> cadastra a música no repertório, se ainda não existe. Quando o dia pedido já tem escala, o botão principal aceita e já põe a música no culto.</li>
+              <li><b>Recusar</b> fecha a sugestão, com um motivo opcional, que quem sugeriu vê.</li>
+            </ul>
+            <p>Ao montar as músicas de uma escala, as sugestões daquela data aparecem no topo.</p>
+          </div>
+          <div class="telas">
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-sugestoes-202610.webp" alt="Sugestões da equipe, com uma sugestão aberta para domingo" width="390" height="844" loading="lazy"></div><figcaption>Sugestões</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="passo" id="relatorios">
+          <div>
+            <h2><span class="n">15</span>Relatórios</h2>
+            <ul>
+              <li><b>Participação</b> (Equipe › Escalas): quantas vezes cada pessoa serviu no período, em que função e quando foi a última. Ajuda a dividir a escala.</li>
+              <li><b>Relatórios do repertório</b> (Equipe › Músicas): o que se repete demais, o que sumiu e o que foi cantado em cada mês.</li>
+            </ul>
+            <p>Os dois têm filtro de período e de dia da semana.</p>
+          </div>
+          <div class="telas">
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-participacao-202610.webp" alt="Participação da equipe por pessoa" width="390" height="844" loading="lazy"></div><figcaption>Participação</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="passo" id="avisos">
+          <div>
+            <h2><span class="n">16</span>Avisos</h2>
+            <p class="onde"><b>Perfil › Avisos no celular</b> (Android) ou <b>Avisos neste navegador</b>.</p>
+            <p>A equipe recebe a escala publicada, as trocas, o repertório pronto e lembretes do ensaio e da véspera do culto. Quem lidera recebe também as sugestões novas e quem avisou que não pode num dia em que já está escalado.</p>
+            <p>No iPhone, os avisos chegam com o Pauta adicionado à tela de início pelo Safari.</p>
+          </div>
+          <div class="telas">
+            <figure class="celular"><div class="moldura"><img src="/assets/img/guia/lider-perfil-202610.webp" alt="Perfil, com a opção de avisos" width="390" height="844" loading="lazy"></div><figcaption>Perfil</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="passo so-texto" id="liberacao">
+          <div>
+            <h2><span class="n">17</span>Recursos que dependem de liberação</h2>
+            <p>Estes recursos existem, mas são ligados para cada equipe. Para usar, fale com o responsável pelo Pauta.</p>
+            <ul>
+              <li><b>Grupo do WhatsApp</b>: o botão "Enviar para o grupo" manda a escala direto no grupo do louvor, pelo número do Pauta. Depois de liberado, o vínculo é feito em Equipe › Configurações.</li>
+              <li><b>Copilotos de IA</b>: <b>Montar o mês com o copiloto</b> (na Agenda) propõe as escalas do mês inteiro pelo rodízio e pela disponibilidade; <b>Sugerir com IA</b> (nas músicas da escala) propõe músicas do repertório a partir do tema da mensagem.</li>
+            </ul>
+            <p>Para quem usa assistentes de IA (Claude, Cursor), o Pauta também pode ser consultado por eles: a chave fica em <b>Perfil › Segurança › Assistentes de IA</b>.</p>
+          </div>
+        </section>
+
+        <div class="guia-fim">
+          <h2>Ficou alguma dúvida?</h2>
+          <p>No app, <b>Perfil › Ajuda</b> tem as perguntas frequentes e o tour de novo. Para a equipe, mande o <a href="/guia/integrante.html">guia do integrante</a> junto com o convite.</p>
+          <div class="ctas">
+            <a class="btn btn-primary" href="https://pautapp.up.railway.app/#/cadastro">Criar conta</a>
+            <a class="btn btn-line" href="/guia/integrante.html">Guia do integrante</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="contato">
+    <div class="wrap">
+      <div class="cols">
+        <div class="about">
+          <a class="brand" href="/"><img src="/assets/img/icon-96.png" alt="" width="32" height="32"><span>Pauta</span></a>
+          <p>Escalas para equipes de louvor.</p>
+        </div>
+        <div>
+          <h4>Guias</h4>
+          <ul>
+            <li><a href="/guia/lider.html">Guia do líder</a></li>
+            <li><a href="/guia/integrante.html">Guia do integrante</a></li>
+            <li><a href="https://pautapp.up.railway.app/#/login">Entrar</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="https://pautapp.up.railway.app/privacidade.html">Privacidade</a></li>
+            <li><a href="https://pautapp.up.railway.app/termos.html">Termos de uso</a></li>
+            <li><a href="https://pautapp.up.railway.app/excluir-conta.html">Excluir conta</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">
+        <span>© 2026 Pauta</span>
+        <span class="fim" aria-hidden="true" title="Fim"><i></i><i></i></span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

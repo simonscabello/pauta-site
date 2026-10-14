@@ -24,7 +24,9 @@
 	# A página muda a cada deploy; os arquivos de /assets mudam de nome
 	# quando mudam (ou quase nunca), então podem ficar em cache.
 	header /assets/* Cache-Control "public, max-age=604800"
-	@html path / *.html
+	# /guia/* também: o endereço limpo (/guia/lider) não termina em .html,
+	# e o guia muda junto com o app.
+	@html path / *.html /guia/*
 	header @html Cache-Control "no-cache"
 
 	header {

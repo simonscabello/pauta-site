@@ -19,4 +19,9 @@ O mínimo:
   `assets/styles.css`. Nada de JavaScript nem de fonte ou script de terceiros.
 - **O que a página promete é o que o app faz.** Mudou uma funcionalidade
   citada, mude o texto junto.
+- **Os guias (`guia/lider.html`, `guia/integrante.html`) descrevem o app de
+  hoje, tela por tela, com capturas reais** (`assets/img/guia/*-AAAAMM.webp`,
+  da equipe fictícia do banco local). Mudou um fluxo no app, mude o guia e a
+  captura na mesma entrega. O mapa do que cada tela afeta está em
+  `../docs/produto/onboarding.md` › Mapa do conteúdo.
 - Ver localmente: `.claude/launch.json` › `pauta-site` (porta 8091).

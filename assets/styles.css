@@ -538,3 +538,63 @@ footer .copy { border-top: 1px solid var(--staff-soft); margin-top: 32px; paddin
 .fim { display: inline-flex; align-items: stretch; gap: 3px; height: 22px; vertical-align: middle; }
 .fim i { display: block; width: 1.5px; background: var(--ink-soft); }
 .fim i + i { width: 5px; background: var(--ink); }
+
+/* ================================================================
+   Guias (guia/lider.html e guia/integrante.html)
+   O passo a passo de cada tela, com a captura real ao lado do texto.
+   Descrevem o app de hoje: mudou um fluxo no app, muda o guia junto
+   (ver docs/produto/onboarding.md, "Mapa do conteúdo").
+   ================================================================ */
+
+.guia-topo { padding: 64px 0 40px; border-bottom: 1px solid var(--staff-soft); }
+.guia-topo .eyebrow { font-size: .76rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); }
+.guia-topo h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.08; margin: 10px 0 16px; }
+.guia-topo .lead { color: var(--ink-soft); font-size: 1.08rem; max-width: 720px; }
+.guia-topo .lead + .lead { margin-top: 10px; }
+
+.guia { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 56px; padding-top: 48px; padding-bottom: 96px; }
+@media (max-width: 960px) { .guia { grid-template-columns: minmax(0, 1fr); gap: 24px; } }
+
+/* O índice: fixo ao lado no monitor, uma lista recolhível no celular. */
+.indice { position: sticky; top: 96px; align-self: start; font-size: .92rem; }
+.indice h2 { font-size: .76rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 12px; font-family: var(--sans); }
+.indice ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 2px; counter-reset: idx; }
+.indice li { counter-increment: idx; }
+.indice a { display: flex; gap: 10px; padding: 6px 10px; border-radius: 10px; color: var(--ink-soft); text-decoration: none; }
+.indice a::before { content: counter(idx); font-variant-numeric: tabular-nums; color: var(--brand); font-weight: 700; min-width: 1.4em; }
+.indice a:hover { background: var(--staff-soft); color: var(--ink); }
+.indice details summary { display: none; }
+@media (max-width: 960px) {
+  .indice { position: static; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 6px 14px; }
+  .indice details summary { display: block; cursor: pointer; padding: 10px 0; font-weight: 700; color: var(--ink); }
+  .indice details:not([open]) ol, .indice details:not([open]) h2 { display: none; }
+  .indice h2 { display: none; }
+}
+
+.passo { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 40px; align-items: start; padding: 48px 0; border-top: 1px solid var(--staff-soft); scroll-margin-top: 84px; }
+.passo:first-child { border-top: 0; padding-top: 0; }
+.passo.so-texto { grid-template-columns: minmax(0, 1fr); }
+@media (max-width: 760px) { .passo { grid-template-columns: minmax(0, 1fr); gap: 24px; padding: 36px 0; } }
+.passo h2 { font-family: var(--serif); font-weight: 400; font-size: 1.9rem; line-height: 1.15; display: flex; gap: 14px; align-items: baseline; }
+.passo h2 .n { font-family: var(--sans); font-size: .95rem; font-weight: 700; color: #fff; background: #4F46E5; border-radius: 999px; min-width: 30px; height: 30px; display: inline-grid; place-items: center; flex: none; transform: translateY(-4px); }
+.passo .onde { margin-top: 8px; color: var(--ink-soft); font-size: .95rem; }
+.passo .onde b { color: var(--ink); }
+.passo p { margin-top: 14px; }
+.passo ol, .passo ul { margin: 14px 0 0; padding-left: 22px; display: grid; gap: 8px; }
+.passo li::marker { color: var(--brand); font-weight: 700; }
+.passo .dica { margin-top: 18px; background: var(--paper-2); border-left: 3px solid var(--mark); padding: 12px 16px; border-radius: 0 12px 12px 0; font-size: .95rem; }
+.passo .dica > b:first-child { display: block; margin-bottom: 2px; }
+.passo kbd { font-family: var(--sans); font-weight: 700; font-size: .9em; background: var(--brand-soft); color: var(--brand-ink); padding: 1px 8px; border-radius: 999px; white-space: nowrap; }
+
+/* As capturas num celular desenhado em CSS. */
+.telas { display: grid; gap: 20px; justify-items: center; }
+.celular { margin: 0; width: 100%; max-width: 260px; }
+.celular .moldura { border-radius: 30px; padding: 8px; background: #1B1830; border: 1px solid var(--staff); box-shadow: var(--shadow); }
+.celular img { border-radius: 23px; width: 100%; height: auto; }
+.celular figcaption { margin-top: 10px; text-align: center; font-size: .82rem; color: var(--ink-soft); }
+@media (max-width: 760px) { .telas { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } }
+
+.guia-fim { margin-top: 24px; background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 28px; box-shadow: var(--shadow); }
+.guia-fim h2 { font-family: var(--serif); font-weight: 400; font-size: 1.6rem; }
+.guia-fim p { margin-top: 10px; color: var(--ink-soft); }
+.guia-fim .ctas { margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap; }
